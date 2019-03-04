@@ -72,7 +72,6 @@ class LIFO_Cycle_Policy:
                 self.fetched.append(result)
                 return result
             else:
-                self.queue.pop()
                 result = self.queue.pop()
                 self.fetched.append(result)
                 return result

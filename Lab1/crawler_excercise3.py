@@ -89,44 +89,44 @@ def getRandom(queue, authority):
         weighs.append(authority[url]) if url in authority else weighs.append(1)
     totalWeight = sum(weighs)
     weighs = [x / totalWeight for x in weighs]
-    choice = numpy.random.choice(queue, p = weighs)
+    choice = numpy.random.choice(queue, p=weighs)
     return choice
 
 
 class LIFO_Authority_Policy:
     queue = []
     seed = []
-    # fetched = []
     authority = {}
+    first = True
 
     def __init__(self, seedURLs):
         self.seed = list(seedURLs)
         self.queue = list(seedURLs)
 
     def getURL(self, c, iteration):
-        for x in c.incomingURLs:
-            self.authority[x] = len(c.incomingURLs[x])+1
-            # print('Authority for ', x, ' is ', self.authority[x])
+        if c.debug and not self.first:
+            print('Queue:')
+            for url in self.queue:
+                print("      " + str(url) + ' authority: ' + str(self.authority[str(url)]) if str(url) in self.authority else str(0))
+
         if len(self.queue) == 0:
-            self.queue.extend(self.seed)
-            c.URLs = set([])
-            self.fetched = []
-            return self.queue.pop()
-            # return None
+            if not self.first:
+                self.queue.extend(self.seed)
+                c.URLs = set([])
+                return self.queue.pop()
+            else:
+                for x in c.incomingURLs:
+                    self.authority[x] = len(c.incomingURLs[x]) + 1
+                    print('Authority for ', x, ' is ', self.authority[x])
+                self.first = False
+
         else:
-            result = getRandom(self.queue, self.authority)
-            return result
-            # if result not in self.fetched:
-                # self.queue.remove(result)
-                # self.fetched.append(result)
-                # return result
-            # else:
-                # self.queue.remove(result)
-                # while result in self.fetched:
-                    # result = getRandom(self.queue, self.authority)
-                # self.queue.remove(result)
-                # self.fetched.append(result)
-                # return result
+            if self.first:
+                result = self.queue.pop()
+                return result
+            else:
+                result = getRandom(self.queue, self.authority)
+                return result
 
     def updateURLs(self, c, retrievedURLs, retrievedURLsWD, iteration):
         tmpList = list(retrievedURLsWD)
@@ -515,9 +515,10 @@ def printOrder(c):
     count = 0
     for node in c.order:
         if 's4' in node:
-            count+=1
+            count += 1
         print(node)
     print('S4 count = ', count)
+
 
 if __name__ == "__main__":
     main()
