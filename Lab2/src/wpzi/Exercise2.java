@@ -71,13 +71,17 @@ public class Exercise2 {
 
         String creator = metadata.get(TikaCoreProperties.CREATOR);
 
-        String creationDate = metadata.get(TikaCoreProperties.CREATED);
-        if (creationDate != null) {
-            Date date = new SimpleDateFormat("yyyy-mm-dd'T'hh:mm:ss'Z'").parse(creationDate);
-            creationDate = new SimpleDateFormat("yyyy-mm-dd").format(date);
+        String created = metadata.get(TikaCoreProperties.CREATED);
+        Date cretionDate = null;
+        if (created != null) {
+            cretionDate = new SimpleDateFormat("yyyy-mm-dd'T'hh:mm:ss'Z'").parse(created);
         }
 
         String lastMod = metadata.get(TikaCoreProperties.MODIFIED);
+        Date modifiedDate= null;
+        if (lastMod != null) {
+            modifiedDate = new SimpleDateFormat("yyyy-mm-dd'T'hh:mm:ss'Z'").parse(lastMod);
+        }
 
         AutoDetectParser autoDetectParser = new AutoDetectParser();
         Detector mimeDetector = autoDetectParser.getDetector();
@@ -93,14 +97,13 @@ public class Exercise2 {
         System.out.println("\nName: " + file.getName());
         System.out.println("Language: " + language);
         System.out.println("Creator: " + creator);
-        System.out.println("Creation date: " + creationDate);
-        System.out.println("Last modification: " + lastMod);
+        System.out.println("Creation date: " + cretionDate);
+        System.out.println("Last modification: " + modifiedDate);
         System.out.println("Mime type: " + mediaType);
         System.out.println("File content:\n" + bodyContentHandler.toString());
 
         // call saveResult method to save the data
-        //TODO Daty
-        saveResult(file.getName(), language, creator, new Date(creationDate), new Date(lastMod), mediaType.toString(), bodyContentHandler.toString()); //TODO: fill with proper values
+        saveResult(file.getName(), language, creator, cretionDate, modifiedDate, mediaType.toString(), bodyContentHandler.toString()); //TODO: fill with proper values
     }
 
     private void saveResult(String fileName, String language, String creatorName, Date creationDate,
