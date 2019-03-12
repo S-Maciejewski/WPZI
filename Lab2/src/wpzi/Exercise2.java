@@ -54,6 +54,7 @@ public class Exercise2 {
     private void initLangDetector() throws IOException {
         // TODO initialize language detector (langDetector)
         this.langDetector = new OptimaizeLangDetector();
+        this.langDetector.loadModels();
     }
 
     private void processFile(File file) throws IOException, SAXException, TikaException, ParseException {
@@ -61,13 +62,12 @@ public class Exercise2 {
 
 
         InputStream stream = new FileInputStream(file);
-        LanguageDetector detector = langDetector.loadModels();
         AutoDetectParser parser = new AutoDetectParser();
         Metadata metadata = new Metadata();
-        ContentHandler handler = new DefaultHandler();
+        ContentHandler handler = new BodyContentHandler(Integer.MAX_VALUE);
         parser.parse(stream, handler, metadata);
 
-        String language = detector.detect(handler.toString()).getLanguage();
+        String language = langDetector.detect(handler.toString()).getLanguage();
 
         String creator = metadata.get(TikaCoreProperties.CREATOR);
 
@@ -83,27 +83,22 @@ public class Exercise2 {
             modifiedDate = new SimpleDateFormat("yyyy-mm-dd'T'hh:mm:ss'Z'").parse(lastMod);
         }
 
-        AutoDetectParser autoDetectParser = new AutoDetectParser();
-        Detector mimeDetector = autoDetectParser.getDetector();
+        Detector mimeDetector = parser.getDetector();
         BufferedInputStream bufferedInputStream = new BufferedInputStream(stream);
         metadata.add(Metadata.RESOURCE_NAME_KEY, file.getName());
         MediaType mediaType = mimeDetector.detect(bufferedInputStream, metadata);
 
-        stream = new FileInputStream(file);
-        metadata = new Metadata();
-        BodyContentHandler bodyContentHandler = new BodyContentHandler(Integer.MAX_VALUE);
-        autoDetectParser.parse(stream, bodyContentHandler, metadata);
 
-        System.out.println("\nName: " + file.getName());
-        System.out.println("Language: " + language);
-        System.out.println("Creator: " + creator);
-        System.out.println("Creation date: " + cretionDate);
-        System.out.println("Last modification: " + modifiedDate);
-        System.out.println("Mime type: " + mediaType);
-        System.out.println("File content:\n" + bodyContentHandler.toString());
+//        System.out.println("\nName: " + file.getName());
+//        System.out.println("Language: " + language);
+//        System.out.println("Creator: " + creator);
+//        System.out.println("Creation date: " + cretionDate);
+//        System.out.println("Last modification: " + modifiedDate);
+//        System.out.println("Mime type: " + mediaType);
+//        System.out.println("File content:\n" + bodyContentHandler.toString());
 
         // call saveResult method to save the data
-        saveResult(file.getName(), language, creator, cretionDate, modifiedDate, mediaType.toString(), bodyContentHandler.toString()); //TODO: fill with proper values
+        saveResult(file.getName(), language, creator, cretionDate, modifiedDate, mediaType.toString(), handler.toString()); //TODO: fill with proper values
     }
 
     private void saveResult(String fileName, String language, String creatorName, Date creationDate,
