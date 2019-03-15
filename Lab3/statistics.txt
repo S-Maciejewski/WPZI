@@ -1,0 +1,185 @@
+Movie: 12 Angry Men
+Sentences: 5
+Tokens: 180
+Stemmed forms (unique): 117
+Words from a dictionary (unique): 72
+People: rose from, marshall and, kaufman s
+Locations: 
+Organizations: in
+
+Movie: 12 Years a Slave
+Sentences: 31
+Tokens: 1204
+Stemmed forms (unique): 590
+Words from a dictionary (unique): 312
+People: steve mcqueens, the early, series of, torture but, to, to random, harder, necessarily, features hunger, fassbender starves, ejiofors quieter, to
+Locations: wife, subject
+Organizations: 
+
+Movie: 4 Months, 3 Weeks and 2 Days
+Sentences: 9
+Tokens: 212
+Stemmed forms (unique): 138
+Words from a dictionary (unique): 77
+People: 
+Locations: 
+Organizations: ifc center lincoln plaza
+
+Movie: All About Eve
+Sentences: 8
+Tokens: 262
+Stemmed forms (unique): 160
+Words from a dictionary (unique): 80
+People: joseph l mankiewicz, anne baxter, stage named
+Locations: new york, played by
+Organizations: academy, best, best actress, best supporting actress
+
+Movie: American Graffiti
+Sentences: 29
+Tokens: 682
+Stemmed forms (unique): 356
+Words from a dictionary (unique): 170
+People: of the, curt henderson, at the, are roughly, up, makes, up, laurie cindy, le, is, her but, funny tough unsentimental it, full of
+Locations: 
+Organizations: 
+
+Movie: Boyhood
+Sentences: 14
+Tokens: 372
+Stemmed forms (unique): 228
+Words from a dictionary (unique): 129
+People: richard linklaters, michael apted, hawke and
+Locations: mason, ahead, before, only
+Organizations: seven up, out
+
+Movie: Casablanca
+Sentences: 11
+Tokens: 339
+Stemmed forms (unique): 216
+Words from a dictionary (unique): 119
+People: spent enjoying, for ingrid, chief claude, studio moviemaking, actors thanks
+Locations: peerless, romantic, drunken
+Organizations: curtiz
+
+Movie: Citizen Kane
+Sentences: 6
+Tokens: 295
+Stemmed forms (unique): 178
+Words from a dictionary (unique): 101
+People: newspaper publisher william, the imaginative
+Locations: in
+Organizations: american film institute, the
+
+Movie: Gone with the Wind
+Sentences: 6
+Tokens: 237
+Stemmed forms (unique): 158
+Words from a dictionary (unique): 95
+People: rhett butler
+Locations: hollywood
+Organizations: 
+
+Movie: Hoop Dreams
+Sentences: 65
+Tokens: 1602
+Stemmed forms (unique): 615
+Words from a dictionary (unique): 327
+People: named william, and arthur, the, but, career, who, we know, about the, neighborhoods than any, looking like, it is, the, years as, careers of
+Locations: 
+Organizations: games by a scout, innercity, will lead they hope
+
+Movie: Manchester by the Sea
+Sentences: 28
+Tokens: 722
+Stemmed forms (unique): 371
+Words from a dictionary (unique): 191
+People: casey, then, brother, hospital, nephew, lucas hedges, writerdirector kenneth, show, entirely, failure, one
+Locations: of
+Organizations: 
+
+Movie: Moonlight
+Sentences: 12
+Tokens: 416
+Stemmed forms (unique): 242
+Words from a dictionary (unique): 138
+People: kevin, throughout jenkins, richard linklaters, wong karwai, pedro almodvar, jenkins, mother paula naomie harris because, drug
+Locations: arc
+Organizations: 
+
+Movie: My Left Foot
+Sentences: 9
+Tokens: 218
+Stemmed forms (unique): 135
+Words from a dictionary (unique): 84
+People: christy brown, daniel daylewis, the, s own, is the
+Locations: 
+Organizations: 
+
+Movie: Pan's Labyrinth
+Sentences: 25
+Tokens: 855
+Stemmed forms (unique): 449
+Words from a dictionary (unique): 228
+People: doug jones, mother, widowed
+Locations: mother
+Organizations: himself, lord
+
+Movie: Psycho
+Sentences: 24
+Tokens: 682
+Stemmed forms (unique): 354
+Words from a dictionary (unique): 197
+People: of alfred, his, murdered at, as the, in solving, as a, small town, joseph stefano, brilliant use, s highly, settings of, milo and, no one
+Locations: new york, hollywood, new, of
+Organizations: screenplay
+
+Movie: Ran
+Sentences: 11
+Tokens: 412
+Stemmed forms (unique): 235
+Words from a dictionary (unique): 125
+People: 
+Locations: expensive, 11, plastic
+Organizations: 
+
+Movie: Singin' in the Rain
+Sentences: 3
+Tokens: 144
+Stemmed forms (unique): 90
+Words from a dictionary (unique): 51
+People: lucky star
+Locations: to
+Organizations: 
+
+Movie: Some Like It Hot
+Sentences: 69
+Tokens: 1512
+Stemmed forms (unique): 632
+Words from a dictionary (unique): 332
+People: marilyn monroe she, she and, look at, jack, they, comedy as lemmon, real, monroe who, the, monroe, her, gift, all, kisser the movie is, away with, watch his, in plain, them, it, to, his round, lean
+Locations: other, always, for, been, the
+Organizations: she, tournament yet
+
+Movie: The Godfather
+Sentences: 34
+Tokens: 815
+Stemmed forms (unique): 429
+Words from a dictionary (unique): 219
+People: by producer albert, version of, behind him, veterans like james caan richard castellano robert duvall sterling hayden, marley and, director francis ford, cameraman gordon, billboard in, christmas on the, michael, published on
+Locations: new york, hollywood, include drugs, new jersey, sicily, have, hollywood
+Organizations: 
+
+Movie: Three Colors Red
+Sentences: 19
+Tokens: 569
+Stemmed forms (unique): 309
+Words from a dictionary (unique): 181
+People: 
+Locations: 
+Organizations: 
+
+---------OVERALL STATISTICS----------
+Verbs: 15.33%
+Nouns: 30.19%
+Adjectives: 9.24%
+Adverbs: 5.32%

@@ -41,11 +41,11 @@ public class OpenNLP {
 //		languageDetection();
 //		 tokenization();
 //         sentenceDetection();
-//		 posTagging();
+		 posTagging();
 //		 lemmatization();
-//		 stemming();
+//        stemming();
 //		 chunking();
-        nameFinding();
+//        nameFinding();
     }
 
     private void languageDetection() throws IOException {
@@ -212,7 +212,7 @@ public class OpenNLP {
         Span[] result = finderME.find(textSplit);
         for (int i = 0; i < result.length; i++) {
             System.out.println(result[i]);
-            for(int j = result[i].getStart(); j<result[i].getEnd(); j++){
+            for (int j = result[i].getStart(); j < result[i].getEnd(); j++) {
                 System.out.println("    " + textSplit[j]);
             }
         }
