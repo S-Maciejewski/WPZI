@@ -25,7 +25,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-
 public class MovieReviewStatictics {
     private static final String DOCUMENTS_PATH = "movies/";
     private int _verbCount = 0;
@@ -109,7 +108,6 @@ public class MovieReviewStatictics {
         //    - number of tokens
         int noTokens = 0;
 
-
         //    - number of (unique) stemmed forms
         int noStemmed = 0;
 
@@ -144,35 +142,29 @@ public class MovieReviewStatictics {
         String[] tokens = tokenizerME.tokenize(text);
         noTokens = tokens.length;
         POSTaggerME posTaggerME = new POSTaggerME(_posModel);
-        String[] tags = posTaggerME.tag(splitText);
-        _totalTokensCount += tags.length;
-
+        String[] tags = posTaggerME.tag(tokens);
+        _totalTokensCount += noTokens;
+//        for(String token : tokens){
+//            System.out.println(token);
+//        }
 
         // TODO perform stemming (use derived tokens)
         // (update noStemmed)
         Set<String> stemmed = new HashSet<>();
-        for (String str : splitText) {
-            stemmed.add(_stemmer.stem(str));
+        for (String str : tokens) {
+            String modifiedToken = str.toLowerCase().replaceAll("[^a-z0-9]", "");
+            if (!str.equals("")) stemmed.add(_stemmer.stem(modifiedToken));
         }
         System.out.println("Stemmed without duplicates: " + stemmed.toArray().length);
         noStemmed = stemmed.toArray().length;
 
-        ArrayList<String> tokensReplaced = new ArrayList<>();
-        for (String token : tokens)
-        {
-//         use .toLowerCase().replaceAll("[^a-z0-9]", ""); thereafter, ignore "" tokens
-            token = token.toLowerCase().replaceAll("[^a-z0-9]", "");
-            if(!token.equals("")) tokensReplaced.add(token);
-        }
-        tokens = tokensReplaced.toArray(new String[0]);
 
         // TODO perform lemmatization (use derived tokens)
         // (remove "O" from results - non-dictionary forms, update noWords)
-        String[] lemmatized = _lemmatizer.lemmatize(splitText, tags);
-        System.out.println("Lemmatized with duplicates: " + lemmatized.length);
+        String[] lemmatized = _lemmatizer.lemmatize(tokens, tags);
         ArrayList<String> uniqueLemmatized = new ArrayList<>(new HashSet<>(Arrays.asList(lemmatized)));
-        for(String str : uniqueLemmatized){
-            if(str.equals("0")) uniqueLemmatized.remove("0");
+        for (String str : uniqueLemmatized) {
+            if (str.equals("0")) uniqueLemmatized.remove("0");
         }
         System.out.println("Lemmatized without duplicates and 0s: " + uniqueLemmatized.toArray().length);
         noWords = uniqueLemmatized.toArray().length;
@@ -180,20 +172,20 @@ public class MovieReviewStatictics {
         // TODO derive people, locations, organisations (use tokens),
         // (update people, locations, organisations lists).
         NameFinderME nameFinderME = new NameFinderME(_peopleModel);
-        people = nameFinderME.find(splitText);
+        people = nameFinderME.find(tokens);
         nameFinderME = new NameFinderME(_placesModel);
-        locations = nameFinderME.find(splitText);
+        locations = nameFinderME.find(tokens);
         nameFinderME = new NameFinderME(_organizationsModel);
-        organisations = nameFinderME.find(splitText);
+        organisations = nameFinderME.find(tokens);
 
         // TODO update overall statistics - use tags and check first letters
         // (see https://www.clips.uantwerpen.be/pages/mbsp-tags; first letter = "V" = verb?)
 
-        for(String tag : tags) {
-            if(tag.toLowerCase().startsWith("v") || tag.toLowerCase().startsWith("m")) _verbCount++;
-            if(tag.toLowerCase().startsWith("n")) _nounCount++;
-            if(tag.toLowerCase().startsWith("j")) _adjectiveCount++;
-            if(tag.toLowerCase().startsWith("r")) _adverbCount++;
+        for (String tag : tags) {
+            if (tag.toLowerCase().startsWith("v") || tag.toLowerCase().startsWith("m")) _verbCount++;
+            if (tag.toLowerCase().startsWith("n")) _nounCount++;
+            if (tag.toLowerCase().startsWith("j")) _adjectiveCount++;
+            if (tag.toLowerCase().startsWith("r")) _adverbCount++;
         }
 
         // ------------------------------------------------------------------

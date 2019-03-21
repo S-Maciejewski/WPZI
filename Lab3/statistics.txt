@@ -1,185 +1,185 @@
 Movie: 12 Angry Men
 Sentences: 5
 Tokens: 180
-Stemmed forms (unique): 117
-Words from a dictionary (unique): 72
-People: rose from, marshall and, kaufman s
+Stemmed forms (unique): 115
+Words from a dictionary (unique): 82
+People: Reginald Rose, Fonda, Marshall, Boris Kaufman
 Locations: 
-Organizations: in
+Organizations: Begley
 
 Movie: 12 Years a Slave
 Sentences: 31
 Tokens: 1204
-Stemmed forms (unique): 590
-Words from a dictionary (unique): 312
-People: steve mcqueens, the early, series of, torture but, to, to random, harder, necessarily, features hunger, fassbender starves, ejiofors quieter, to
-Locations: wife, subject
+Stemmed forms (unique): 530
+Words from a dictionary (unique): 363
+People: Steve McQueen�s, Solomon Northup, Solomon, After Solomon, William Ford, Paul Dano, Solomon, Edwin Epps, Michael Fassbender, Solomon, Sarah Paulson, Solomon, Solomon, Michael Fassbender, Bobby Sands, John Ridley, Solomon
+Locations: Saratoga Springs, Epps, Epps, Shame, Bobby Sands
 Organizations: 
 
 Movie: 4 Months, 3 Weeks and 2 Days
 Sentences: 9
 Tokens: 212
-Stemmed forms (unique): 138
-Words from a dictionary (unique): 77
-People: 
+Stemmed forms (unique): 129
+Words from a dictionary (unique): 87
+People: Laura Vasiliu, Vlad Ivanov
 Locations: 
-Organizations: ifc center lincoln plaza
+Organizations: IFC Center, Lincoln Plaza
 
 Movie: All About Eve
 Sentences: 8
 Tokens: 262
-Stemmed forms (unique): 160
-Words from a dictionary (unique): 80
-People: joseph l mankiewicz, anne baxter, stage named
-Locations: new york, played by
-Organizations: academy, best, best actress, best supporting actress
+Stemmed forms (unique): 146
+Words from a dictionary (unique): 93
+People: Joseph L. Mankiewicz, Anne Baxter, Margo Channing
+Locations: New York, Bette Davis
+Organizations: Academy, Best, Best Supporting Actress, Mankiewicz�s
 
 Movie: American Graffiti
 Sentences: 29
 Tokens: 682
-Stemmed forms (unique): 356
-Words from a dictionary (unique): 170
-People: of the, curt henderson, at the, are roughly, up, makes, up, laurie cindy, le, is, her but, funny tough unsentimental it, full of
-Locations: 
-Organizations: 
+Stemmed forms (unique): 318
+Words from a dictionary (unique): 212
+People: Candles, Curt Henderson, Steve Bolander, John Milner, George Lucas, Steve (, Curt, Laurie, Cindy Williams, Terry, Charlie Martin Smith, Steve 's Chevy, Candy Clark, John, Paul Le Mat, Curt, Richard Dreyfuss, Magic Carpet Airlines, Candy Clark, Richard Dreyfuss, Cindy Williams, George Lucas
+Locations: California
+Organizations: American Graffiti, American Graffiti
 
 Movie: Boyhood
 Sentences: 14
 Tokens: 372
-Stemmed forms (unique): 228
-Words from a dictionary (unique): 129
-People: richard linklaters, michael apted, hawke and
-Locations: mason, ahead, before, only
-Organizations: seven up, out
+Stemmed forms (unique): 211
+Words from a dictionary (unique): 149
+People: Richard Linklater�s, Like Michael Apted, Lorelei Linklater, Ethan Hawke, Patricia Arquette, Coltrane
+Locations: Mason, Mason, Mason
+Organizations: Linklater�s
 
 Movie: Casablanca
 Sentences: 11
 Tokens: 339
-Stemmed forms (unique): 216
-Words from a dictionary (unique): 119
-People: spent enjoying, for ingrid, chief claude, studio moviemaking, actors thanks
-Locations: peerless, romantic, drunken
-Organizations: curtiz
+Stemmed forms (unique): 210
+Words from a dictionary (unique): 140
+People: Michael Curtiz�s, Ingrid Bergman, Claude Rains, Michael Curtiz, Arthur Edeson
+Locations: Essex, Hollywood, WW2-era, Paris
+Organizations: Warner
 
 Movie: Citizen Kane
 Sentences: 6
 Tokens: 295
-Stemmed forms (unique): 178
-Words from a dictionary (unique): 101
-People: newspaper publisher william, the imaginative
-Locations: in
-Organizations: american film institute, the
+Stemmed forms (unique): 167
+Words from a dictionary (unique): 116
+People: William Randolph Hearst, Gregg Toland
+Locations: 
+Organizations: American Film Institute, AMC
 
 Movie: Gone with the Wind
 Sentences: 6
 Tokens: 237
-Stemmed forms (unique): 158
-Words from a dictionary (unique): 95
-People: rhett butler
-Locations: hollywood
-Organizations: 
+Stemmed forms (unique): 149
+Words from a dictionary (unique): 105
+People: Rhett Butler
+Locations: Hollywood
+Organizations: New Line
 
 Movie: Hoop Dreams
 Sentences: 65
 Tokens: 1602
-Stemmed forms (unique): 615
-Words from a dictionary (unique): 327
-People: named william, and arthur, the, but, career, who, we know, about the, neighborhoods than any, looking like, it is, the, years as, careers of
-Locations: 
-Organizations: games by a scout, innercity, will lead they hope
+Stemmed forms (unique): 509
+Words from a dictionary (unique): 375
+People: William Gates, Arthur Agee, William and Arthur, William, Arthur, Isiah Thomas, Arthur, William, Jordan, Isiah Thomas, Arthur, Arthur, William and Arthur, Arthur Agee, William Gates, Arthur, Arthur, Gene Pingatore, Isiah Thomas, Steve James, Frederick Marx, Peter Gilbert
+Locations: Chicago, Westchester, Chicago, South Side, Westchester
+Organizations: NBA, High School, NBA, NBA, High School, PBS
 
 Movie: Manchester by the Sea
 Sentences: 28
 Tokens: 722
-Stemmed forms (unique): 371
-Words from a dictionary (unique): 191
-People: casey, then, brother, hospital, nephew, lucas hedges, writerdirector kenneth, show, entirely, failure, one
-Locations: of
+Stemmed forms (unique): 332
+Words from a dictionary (unique): 229
+People: Lee, Casey Affleck, Joe, Kyle Chandler, Joe, Lee, Patrick, Lucas Hedges, Lee, Michelle Williams, Kenneth, Lonergan, Lee, Lee, Hedges, Patrick, Joe, Patrick, Lee, But
+Locations: Boston, Manchester, Manchester�s
 Organizations: 
 
 Movie: Moonlight
 Sentences: 12
 Tokens: 416
-Stemmed forms (unique): 242
-Words from a dictionary (unique): 138
-People: kevin, throughout jenkins, richard linklaters, wong karwai, pedro almodvar, jenkins, mother paula naomie harris because, drug
-Locations: arc
+Stemmed forms (unique): 225
+Words from a dictionary (unique): 163
+People: Trevante Rhodes, Kevin, Jenkins, Richard Linklater�s, Wong Kar-wai, Pedro Almod�var, Jenkins, Paula, Naomie Harris, Because Jenkins, Collectively, Juan, Alex Hibbert, Harris, Chiron
+Locations: Paula�s
 Organizations: 
 
 Movie: My Left Foot
 Sentences: 9
 Tokens: 218
-Stemmed forms (unique): 135
-Words from a dictionary (unique): 84
-People: christy brown, daniel daylewis, the, s own, is the
+Stemmed forms (unique): 122
+Words from a dictionary (unique): 91
+People: Christy Brown, Daniel Day-Lewis, Brown, Brenda Fricker, Ray McAnally
 Locations: 
 Organizations: 
 
 Movie: Pan's Labyrinth
 Sentences: 25
 Tokens: 855
-Stemmed forms (unique): 449
-Words from a dictionary (unique): 228
-People: doug jones, mother, widowed
-Locations: mother
-Organizations: himself, lord
+Stemmed forms (unique): 409
+Words from a dictionary (unique): 268
+People: Doug Jones, Ivana Baquero, Carmen, Carmen, Javier Navarrete�s, Guillermo Navarro
+Locations: Spain
+Organizations: Pan, Lord
 
 Movie: Psycho
 Sentences: 24
 Tokens: 682
-Stemmed forms (unique): 354
-Words from a dictionary (unique): 197
-People: of alfred, his, murdered at, as the, in solving, as a, small town, joseph stefano, brilliant use, s highly, settings of, milo and, no one
-Locations: new york, hollywood, new, of
-Organizations: screenplay
+Stemmed forms (unique): 321
+Words from a dictionary (unique): 221
+People: Alfred Hitchcock, Alfred Hitchcock, Hitchcock, Anthony Perkins, John Gavin, Vera Miles, Martin Balsam, John McIntire, Simon Oakland, Perkins, Joseph Stefano, Robert Block, John L. Russell, Bernard Herrmann, George Milo, Joseph Burly, Robert Clatworthy, Jack Harrison
+Locations: New York, Hollywood, New York, Paramount, Phoenix, Arizona, 40,000
+Organizations: The, Hitchcock
 
 Movie: Ran
 Sentences: 11
 Tokens: 412
-Stemmed forms (unique): 235
-Words from a dictionary (unique): 125
+Stemmed forms (unique): 218
+Words from a dictionary (unique): 146
 People: 
-Locations: expensive, 11, plastic
+Locations: Japan, Japan, Japan, Hollywood, Mount Fuji
 Organizations: 
 
 Movie: Singin' in the Rain
 Sentences: 3
 Tokens: 144
-Stemmed forms (unique): 90
-Words from a dictionary (unique): 51
-People: lucky star
-Locations: to
+Stemmed forms (unique): 88
+Words from a dictionary (unique): 56
+People: Reynolds, Lucky Star
+Locations: Kelly, Hollywood
 Organizations: 
 
 Movie: Some Like It Hot
 Sentences: 69
 Tokens: 1512
-Stemmed forms (unique): 632
-Words from a dictionary (unique): 332
-People: marilyn monroe she, she and, look at, jack, they, comedy as lemmon, real, monroe who, the, monroe, her, gift, all, kisser the movie is, away with, watch his, in plain, them, it, to, his round, lean
-Locations: other, always, for, been, the
-Organizations: she, tournament yet
+Stemmed forms (unique): 521
+Words from a dictionary (unique): 382
+People: Marilyn Monroe, Billy Wilder, Tony Curtis, Jack Lemmon, Curtis, Curtis, Joe E. Brown, Harpo, Frank Sinatra, Wilder, Curtis, Curtis, Marilyn, Curtis, Hitler, Curtis, Joe E. Brown, George Raft, Pat O'Brien, Tony Curtis, Cary Grant, Curtis, When Monroe, Does Wilder, Wilder, Curtis, Joe E. Brown, Brown, Curtis, Brown, Brown
+Locations: Chicago, Florida, Monroe, Monroe, Monroe, Niagara Falls
+Organizations: Shell Oil
 
 Movie: The Godfather
 Sentences: 34
 Tokens: 815
-Stemmed forms (unique): 429
-Words from a dictionary (unique): 219
-People: by producer albert, version of, behind him, veterans like james caan richard castellano robert duvall sterling hayden, marley and, director francis ford, cameraman gordon, billboard in, christmas on the, michael, published on
-Locations: new york, hollywood, include drugs, new jersey, sicily, have, hollywood
+Stemmed forms (unique): 385
+Words from a dictionary (unique): 256
+People: Albert S. Ruddy, Mario Puzo, Al Pacino, Dustin Hoffman, Michael Corleone, James Caan, Richard Castellano, Robert Duvall, Sterling Hayden, John Marley, Richard Conte, Francis Ford Coppola, Gordon Willis, Jerry Lewis, Merry Little, Arthur Knight
+Locations: New York City, Hollywood, Needle Park, Las Vegas, Sterling, New Jersey, Sicily, Vegas, Hollywood, Las Vegas
 Organizations: 
 
 Movie: Three Colors Red
 Sentences: 19
 Tokens: 569
-Stemmed forms (unique): 309
-Words from a dictionary (unique): 181
-People: 
+Stemmed forms (unique): 279
+Words from a dictionary (unique): 211
+People: Kieslowski
 Locations: 
 Organizations: 
 
 ---------OVERALL STATISTICS----------
-Verbs: 15.33%
-Nouns: 30.19%
-Adjectives: 9.24%
-Adverbs: 5.32%
+Verbs: 13.56%
+Nouns: 26.16%
+Adjectives: 8.50%
+Adverbs: 4.79%

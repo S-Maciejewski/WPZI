@@ -41,11 +41,11 @@ public class OpenNLP {
 //		languageDetection();
 //		 tokenization();
 //         sentenceDetection();
-		 posTagging();
+//		 posTagging();
 //		 lemmatization();
 //        stemming();
 //		 chunking();
-//        nameFinding();
+        nameFinding();
     }
 
     private void languageDetection() throws IOException {
