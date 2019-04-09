@@ -136,7 +136,7 @@ public class Indexer
         // TODO create a field that is stored and indexed
         // and contains file name
         // ----------------------------------
-        StoredField documentName = new StoredField(Constants.filename, file.getName());
+        TextField documentName = new TextField(Constants.filename, file.getName(), Field.Store.YES);
         // ----------------------------------
 
         // TODO create an INT field (IntPoint) that is indexed
@@ -152,6 +152,7 @@ public class Indexer
 
         // TODO add fields to the document object
         // ----------------------------------
+        System.out.println("name: " + documentName);
         document.add(documentId);
         document.add(documentContent);
         document.add(documentName);

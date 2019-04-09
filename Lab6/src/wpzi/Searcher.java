@@ -14,6 +14,7 @@ import org.apache.lucene.search.*;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.BytesRef;
+import org.apache.lucene.util.Version;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -94,19 +95,16 @@ public class Searcher {
         // For this reason, construct Range query.
         // Use IntPoint.newRangeQuery.
         {
-//            TermRangeQuery rq = new IntPoint.newRangeQuery(Constants.filesize_int, "0", "1000");
-            TermRangeQuery rq = new TermRangeQuery(Constants.filesize_int, new BytesRef("0"), new BytesRef("1000"), true, true);
-
             // --------------------------------------
             System.out.println("4) range query: file size in [0b, 1000b]");
-            printResultsForQuery(indexSearcher, rq);
+            printResultsForQuery(indexSearcher, IntPoint.newRangeQuery(Constants.filesize_int,0,1000));
             // --------------------------------------
         }
 
         // TODO let's find all documents which name starts with "ant".
         // For this reason, construct PrefixQuery.
         {
-            PrefixQuery pq = new PrefixQuery(new Term(Constants.filename, "ant"));
+            Query pq = new PrefixQuery(new Term(Constants.filename, "ant"));
             // --------------------------------------
             System.out.println("5) Prefix query (FILENAME): ant");
             printResultsForQuery(indexSearcher, pq);
@@ -150,13 +148,12 @@ public class Searcher {
         String queryP4 = "(\"nocturnal life\"~10) OR bat";
         String queryP5 = "(\"nocturnal life\"~10) OR (\"are nocturnal\"~10)";
         // Select some query:
-        String selectedQuery = queryP1;
+        String selectedQuery = queryP5;
         // Complete the code here, i.e., build query parser object, parse selected query
         // to query object, and find relevant documents. Analyze the outcomes.
         {
-            QueryParser qp = new QueryParser(selectedQuery, analyzer);
             try {
-                Query query = qp.Query(Constants.content);
+                Query query = new QueryParser(Constants.content, analyzer).parse(selectedQuery);
                 System.out.println("8) query parser = " + selectedQuery);
                 printResultsForQuery(indexSearcher, query);
 
