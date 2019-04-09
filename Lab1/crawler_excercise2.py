@@ -65,7 +65,6 @@ class LIFO_Cycle_Policy:
             c.URLs = set([])
             self.fetched = []
             return self.queue.pop()
-            # return None
         else:
             if self.queue[-1] not in self.fetched:
                 result = self.queue.pop()
@@ -155,7 +154,7 @@ class Container:
         self.storedIncomingURLs = "/" + self.example + "/incoming/"
 
         # If True: debug
-        self.debug = True
+        self.debug = False
 
 
 def main():

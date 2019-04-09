@@ -107,7 +107,8 @@ class LIFO_Authority_Policy:
         if c.debug and not self.first:
             print('Queue:')
             for url in self.queue:
-                print("      " + str(url) + ' authority: ' + str(self.authority[str(url)]) if str(url) in self.authority else str(0))
+                print("      " + str(url) + ' authority: ' +
+                      str(self.authority[str(url)]) if str(url) in self.authority else str(0))
 
         if len(self.queue) == 0:
             if not self.first:
@@ -207,8 +208,8 @@ class Container:
         self.storedIncomingURLs = "/" + self.example + "/incoming/"
 
         # If True: debug
-        # self.debug = True
-        self.debug = False
+        self.debug = True
+        # self.debug = False
 
 
 def main():
